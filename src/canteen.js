@@ -212,15 +212,7 @@ setCameraDirection(camera, new THREE.Vector3(0, 0, 0));
 
 scene.add(camera)
 
-// Controls
-const controls = new OrbitControls(camera, canvas)
-controls.target.set(0, 1, 0)
-controls.enableDamping = true
-
-// Log camera position when orbiting
-controls.addEventListener('change', () => {
-    console.log(`Camera position: x=${camera.position.x}, y=${camera.position.y}, z=${camera.position.z}`);
-});
+ 
 
 /**
  * Renderer
